@@ -7,11 +7,11 @@ function scrollFunction() {
         document.getElementById("navbar").classList.add("shadow-3");
 
         if ($(window).width() < 992){
-            document.getElementById("navbar-brand").style.height = "4rem";
+            document.getElementById("navbar-brand").style.height = "3rem";
             document.getElementById("navbar").style.padding = "10px 25px";
         } else {
-            document.getElementById("navbar-brand").style.height = "5rem";
-            document.getElementById("navbar").style.padding = "25px";
+            document.getElementById("navbar-brand").style.height = "3rem";
+            document.getElementById("navbar").style.padding = "10px 25px";
         };
 
     } else {
@@ -20,9 +20,9 @@ function scrollFunction() {
         document.getElementById("navbar").classList.remove("shadow-3");
         
         if ($(window).width() < 992){
-            document.getElementById("navbar-brand").style.height = "10rem";
+            document.getElementById("navbar-brand").style.height = "5rem";
         } else {
-            document.getElementById("navbar-brand").style.height = "10rem";
+            document.getElementById("navbar-brand").style.height = "5rem";
         };
         
     };
