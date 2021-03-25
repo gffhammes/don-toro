@@ -2,20 +2,29 @@
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        document.getElementById("navbar").style.padding = ".75rem";
+        document.getElementById("navbar").style.padding = "25px";
         document.getElementById("navbar").style.backgroundColor = "#231f20";
         document.getElementById("navbar").classList.add("shadow-3");
-        document.getElementById("navbar-brand").style.height = "3rem";
+
+        if ($(window).width() < 992){
+            document.getElementById("navbar-brand").style.height = "4rem";
+        } else {
+            document.getElementById("navbar-brand").style.height = "5rem";
+        };
+
     } else {
-        document.getElementById("navbar").style.padding = "50px 50px";
+        document.getElementById("navbar").style.padding = "50px";
         document.getElementById("navbar").style.backgroundColor = "transparent";
         document.getElementById("navbar").classList.remove("shadow-3");
-        document.getElementById("navbar-brand").style.height = "5rem";
-    }
+        
+        if ($(window).width() < 992){
+            document.getElementById("navbar-brand").style.height = "10rem";
+        } else {
+            document.getElementById("navbar-brand").style.height = "10rem";
+        };
+        
+    };
 };
-
-
-
 
 
 //PARALLAX

@@ -36,16 +36,17 @@
 ==============================*/
 #logo-banner-mobile{
     max-width: 10rem;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    max-height: 20vh;
     display: none;
+    object-fit: contain;
+    object-position: left;
 }
 
 #banner-home-info{
     z-index:5;
     top:0;
     position: absolute;
-    padding-top: 15vh;
+    padding-top: 10vh;
     padding-bottom: 10vh;
     width: 100%;
 }
@@ -57,7 +58,12 @@
 #banner-home-info > .container > .row > .col {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
+}
+
+
+#banner-home-info h1{
+    margin: 0 0 10vh 0;
 }
 
 #buttons-banner .col-12 {
@@ -70,8 +76,11 @@
 }
 
 
-
-
+@media (min-width:992px){   
+    #banner-home-info > .container > .row > .col{
+        justify-content: flex-end;
+    }
+}
 
 
 
@@ -560,7 +569,7 @@
     }
 
     #banner-home-info h1{
-        margin: 0 0 10vh 0;
+        margin: 0 0 5vh 0;
     }    
     .btn-1{
         margin: 0 0 1rem 0;
@@ -579,14 +588,19 @@
 /*Extra Small*/
 @media (max-width: 575px){
     h1{
-        font-size: 2.3rem!important;
+        font-size: 4rem;
     }
     .kit-price > span{
-        font-size: 1.3rem!important;
+        font-size: 1.3rem;
     }
 }
 
 /*350>*/
+@media (max-width: 350px){
+    h1{
+        font-size: 3rem;
+    }
+}
 
 
 /*height query*/
@@ -632,9 +646,6 @@
         flex-direction: column;
         justify-content: space-between;
     }
-    #banner-home-info h1{
-        margin: 0;
-    }    
     #content-quem-somos img{
         height: 10vh;
     }
