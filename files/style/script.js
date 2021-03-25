@@ -3,7 +3,7 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         document.getElementById("navbar").style.padding = "10px 25px";
-        document.getElementById("navbar").style.backgroundColor = "#231f20";
+        document.getElementById("navbar").style.backgroundColor = "#131111";
         document.getElementById("navbar").classList.add("shadow-3");
 
         if ($(window).width() < 992){
@@ -91,4 +91,14 @@ $('.slider-home-eventos').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows:false
+});
+$('.slider-carnes-kit').slick({
+    initialSlide:0,
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows:false,
+    mobileFirst: true,
 });

@@ -390,24 +390,30 @@ footer .col{
 }
 
 .nav-link{
-    color: white;
+    color: #fff;
     padding: 10px;
     margin: 0 5px;
     border-bottom: 2px transparent solid;
     font-size:.8rem;
+    transition: 200ms;
 }
 
 .nav-link:hover{
+    color: #fff!important;
     border-bottom: 2px #ffffff solid;
+    transition: 200ms;
 }
 
 .dropdown-menu{
-    background-color: #131111;    
+    background-color: #2e2c2d;    
 }
 
 .dropdown-item{
     color:#fff;
     font-size: .8rem;
+    background-color: #2e2c2d;
+    padding: 1rem;
+    transition: 200ms;
 }
 
 .navbar-location i{
@@ -515,6 +521,15 @@ footer .col{
 }
 
 
+
+#parallax-banner .cover{
+    background-color: #231f20;
+    top:0;
+    position: absolute;
+    height: 75vh;
+    width: 100%;
+    mix-blend-mode: multiply;
+}
 
 
 

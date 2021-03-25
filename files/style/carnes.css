@@ -1,4 +1,3 @@
-
 /*PARALLAX BANNER
 ==============================*/
 
@@ -12,7 +11,7 @@
 }
   
 .parallax {
-    background-image: url('../img/shutterstock/stock-photo-two-classic-fresh-rib-eye-steaks-on-a-wooden-board-1666869046.jpg');
+    background-image: url('../img/shutterstock/stock-photo-set-of-various-classic-alternative-raw-meat-veal-beef-steaks-chateau-mignon-t-bone-tomahawk-1811510533.jpg');
     background-size: cover;
     background-position: 25% center;
     height: 75vh;
@@ -29,8 +28,7 @@
 
 
 /*PAGE TITLE
-============================== 
-    background-image: linear-gradient(180deg, #231f20f1 50%, #231f20c2); */
+==============================*/
 
 #page-title{
     z-index:5;
@@ -52,54 +50,26 @@
 
 
 
-
-/*NOSSA HISTORIA
+/*KITS
 ==============================*/
 
-#nossa-historia .row.content{
+
+#kits-promocionais .row.content{
     padding-bottom: 0;
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-#nossa-historia .text-content{
-    flex-basis: 20ch;
-}
-
-#nossa-historia .img-content{
-    flex-basis: 300px;
-}
-
-#nossa-historia .img-content > img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
 }
 
 
-
-
-
-
-
-/*DIFERENCIAIS
-==============================*/
-
-#diferenciais{
-    padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
-    background-color: #231f20;
+#kits-promocionais .card-img{
+    height: 15vh;
+    position: relative;
 }
 
-#diferenciais .title{
-    text-align: center;
+#kits-promocionais .card-details ul{
+    white-space: normal;
 }
 
-#diferenciais .row.content{
-    padding-bottom: 0;
+#kits-promocionais .card-details ul li{
+    margin-bottom: 1rem;
 }
 
 .kit-price > span{
@@ -108,28 +78,35 @@
     white-space: nowrap;
 }
 
+#kits-promocionais .card-content{
+    background-color: #f1f1f1;
+}
+
 .kit-size{
     color: #6d6d6d;
     font-size: .8rem;
 }
 
-.slider-home-kit .slick-dots li.slick-active button:before {
-    opacity: 1;
-    color: #fff;
-}
 
-.slider-home-kit .slick-dots li button:before{
-    opacity: .3;
-    color: #fff;
-}
-
-.slider-home-kit .slick-dots{
-    bottom: auto;
+.slider-carnes-kit .slick-dots{
+    bottom: -50px;
     margin-top: 1rem;
 }
 
-.col .slick-slide{
+.col.slick-slide{
     padding: 0;
+}
+
+.carousel{
+    padding: 0;
+}
+
+.card-buttons .row{
+    width: 100%;
+}
+
+#kits-promocionais .btn-1{
+    width: 100%;
 }
 
 @media (max-width:799px){
@@ -184,8 +161,11 @@
 ==============================*/
 
 #mais-vendidas{
-    padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
+    background-color: #231f20;
+}
+
+#mais-vendidas .title{
+    text-align: center;
 }
 
 #mais-vendidas .content{
@@ -204,8 +184,7 @@
     padding: 0;
 }
 
-
-#mais-vendidas .gradient-cover{
+.gradient-cover{
     background-image: linear-gradient(45deg,#231f20,#231f2000);
     position: absolute;
     height: 100%;
@@ -383,9 +362,12 @@
     background-color: #231f20;
 }
 
-#eventos h2,
-#eventos .section-title{
+#eventos .title{
     text-align: center;
+}
+
+#eventos .container .content{
+    padding-bottom: 0;
 }
 
 .card-content h3{
@@ -406,10 +388,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-#eventos .card-img {
-    height:30vh;
 }
 
 #eventos .card-img > img{
@@ -467,3 +445,124 @@
     }
 }
 
+
+
+
+/*==========MEDIA QUERIES==========*/
+
+
+/*Large*/
+@media (min-width: 992px){
+    #banner-home-info{
+        padding-bottom: 10vh ;
+    }
+    #buttons-banner .col-12{
+        margin: 0 1rem 0 0;
+    }
+    #banner-home-info h1{
+        margin: 0 0 10vh 0;
+        font-size: 6rem;
+    }    
+    .card-1 .card-buttons{
+        display: flex;    
+        align-items: center;    
+        vertical-align: middle;
+    }
+    .card-1 .card-buttons .cbtn{
+        margin: 0 1rem 0 0;  
+    }
+}
+
+/*Medium*/
+@media (max-width: 991px){
+    
+    .btn-1{
+        margin: 0 1rem 0 0;
+    } 
+     
+    #banner-home-info > .row > .col{
+        bottom:0;
+    }
+
+    #banner-home-info h1{
+        margin: 0 0 5vh 0;
+    }    
+    .btn-1{
+        margin: 0 0 1rem 0;
+    }
+    .card-1 .card-buttons .cbtn{
+        margin: 0 0 1rem 0;  
+    }
+}
+
+/*Small*/
+@media (max-width: 767px){  
+    
+   
+}
+
+/*Extra Small*/
+@media (max-width: 575px){
+    h1{
+        font-size: 4rem;
+    }
+    .kit-price > span{
+        font-size: 1.3rem;
+    }
+}
+
+/*350>*/
+@media (max-width: 350px){
+    h1{
+        font-size: 3rem;
+    }
+}
+
+
+/*height query*/
+@media (min-height: 600px){
+}
+
+
+@media (max-height: 600px){
+    .card-img{
+        height: 15vh;
+    } 
+    .card-content{
+        padding: 1rem;
+    }
+}
+
+@media (max-height: 600px) and (max-width: 349px){
+    .card-content .card-details span{
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+
+
+@media (min-width: 992px){        
+    #banner-home-info > .container > .row > .col{
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 991px){
+    #logo-banner-mobile{
+        display:block ;
+    }
+    #banner-home-info > .row > .col{
+        margin-top: 0;
+        padding-top: 2vh;
+    }    
+    #banner-home-info > .row > .col{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #content-quem-somos img{
+        height: 10vh;
+    }
+}

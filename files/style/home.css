@@ -15,13 +15,15 @@
 }
   
 .parallax {
-    background-image: url('../img/fundo-parallax-home.png');
+    background-image: url('../img/shutterstock/stock-photo-variety-of-raw-black-angus-prime-meat-steaks-blade-on-bone-striploin-rib-eye-tenderloin-fillet-1031664232.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
 }
 
-
+#parallax-banner .cover{
+    height: 100vh;
+}
 
 
 
@@ -170,6 +172,10 @@
     white-space: nowrap;
 }
 
+#kits-promocionais .row.content .col{
+    padding: 0;
+}
+
 .kit-size{
     color: #6d6d6d;
     font-size: .8rem;
@@ -185,8 +191,8 @@
     color: #fff;
 }
 
-.slider-home-kit .slick-dots{
-    bottom: auto;
+#kits-promocionais .slick-dots{
+    bottom: -50px;
     margin-top: 1rem;
 }
 
@@ -443,7 +449,7 @@
     text-align: center;
 }
 
-#eventos .content{
+#eventos .container .content{
     padding-bottom: 0;
 }
 

@@ -12,9 +12,9 @@
 }
   
 .parallax {
-    background-image: url('../img/shutterstock/stock-photo-two-classic-fresh-rib-eye-steaks-on-a-wooden-board-1666869046.jpg');
+    background-image: url('../img/shutterstock/stock-photo-rib-eye-steaks-cooking-on-flaming-grill-panorama-1406775134.jpg');
     background-size: cover;
-    background-position: 25% center;
+    background-position: 25% top;
     height: 75vh;
 }
 
