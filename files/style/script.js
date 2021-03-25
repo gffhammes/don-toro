@@ -2,7 +2,7 @@
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        document.getElementById("navbar").style.padding = "25px";
+        document.getElementById("navbar").style.padding = "10px 25px";
         document.getElementById("navbar").style.backgroundColor = "#231f20";
         document.getElementById("navbar").classList.add("shadow-3");
 
