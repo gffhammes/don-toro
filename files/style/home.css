@@ -153,8 +153,6 @@
 ==============================*/
 
 #kits-promocionais{
-    padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
     background-color: #231f20;
 }
 
@@ -246,11 +244,6 @@
 
 /*MAIS VENDIDAS
 ==============================*/
-
-#mais-vendidas{
-    padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
-}
 
 #mais-vendidas .content{
     margin: 2rem 0;
@@ -450,6 +443,9 @@
     text-align: center;
 }
 
+#eventos .content{
+    padding-bottom: 0;
+}
 
 .card-content h3{
     white-space: normal;
