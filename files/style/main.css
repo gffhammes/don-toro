@@ -425,7 +425,7 @@ footer .col{
 }
 
 #navbar-brand {
-    height: 10rem;
+    height: 5rem;
     transition: 300ms;
     z-index: 99;
 }
