@@ -8,8 +8,10 @@ function scrollFunction() {
 
         if ($(window).width() < 992){
             document.getElementById("navbar-brand").style.height = "4rem";
+            document.getElementById("navbar").style.padding = "10px 25px";
         } else {
             document.getElementById("navbar-brand").style.height = "5rem";
+            document.getElementById("navbar").style.padding = "25px";
         };
 
     } else {
