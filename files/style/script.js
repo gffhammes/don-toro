@@ -19,7 +19,7 @@ function scrollFunction() {
         document.getElementById("navbar").style.backgroundColor = "transparent";
         document.getElementById("navbar").classList.remove("shadow-3");
         
-        if ($(window).width() < 992){
+        if (($(window).width() < 992) && ($(window).height() > 749)){
             document.getElementById("navbar-brand").style.height = "10rem";
         } else {
             document.getElementById("navbar-brand").style.height = "5rem";

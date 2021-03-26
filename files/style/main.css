@@ -24,13 +24,13 @@
 
 html {
     font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;    
 }
 
 @media (prefers-reduced-motion: reduce) {
     .collapsing {
         transition-property: width, visibility;
-        transition-duration: .35s;
+        transition-duration: .25s;
     }
 }
 
@@ -523,7 +523,7 @@ footer .col{
 
 
 #parallax-banner .cover{
-    background-color: #231f20;
+    background-color: rgba(35, 31, 32, .85);
     top:0;
     position: absolute;
     height: 75vh;
@@ -613,7 +613,7 @@ footer .col{
     }
 
     ul.navbar-nav{
-        margin-top: 15rem;
+        margin-top: 25vh;
         margin-bottom: 3.5rem;
         margin-left: 2rem;
         margin-right: 2rem;
@@ -663,5 +663,15 @@ footer .col{
 @media (max-width: 350px){
     h1{
         font-size: 3rem;
+    }
+}
+
+
+@media (max-height:749px){
+    h1{
+        font-size: 3rem;
+    }
+    #navbar-brand{
+        height: 5rem;
     }
 }
