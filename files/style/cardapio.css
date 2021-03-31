@@ -90,6 +90,10 @@ body{
     align-items: flex-start;
 }
 
+.cardapio-item-header h3{
+    font-sie: 1.2rem;
+}
+
 .cardapio-item-header > .col{
     padding: 0;
     max-width: 60%;
