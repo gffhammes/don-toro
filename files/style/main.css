@@ -438,6 +438,10 @@ footer .col{
     z-index: 1000;
 }
 
+.dropdown-item.active{
+    background-color: #aba000;
+}
+
 
 /*==========BUTTONS==========*/
 

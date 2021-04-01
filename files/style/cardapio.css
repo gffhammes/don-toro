@@ -5,8 +5,14 @@
 /*GENERAL
 ====================*/
 body{
-    background-color: #231f20;
+    background-color: #231f20;    
 }
+
+section{
+    padding: 5rem 0 5rem 0;
+}
+
+
 #entradas{
     padding-top: 17rem;
 }
@@ -26,6 +32,12 @@ body{
     background-color: #fff;
     border-radius: 10px;
     height: 100%;
+}
+
+@media (min-width:768px){
+    .row.content > .col{
+        padding: 0;
+    }
 }
 
 @media (max-width:767px){
