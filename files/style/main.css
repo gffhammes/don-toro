@@ -661,7 +661,9 @@ footer .col{
         margin-bottom: 5rem;
     }
    
-}/*Extra Small*/
+}
+
+/*Extra Small*/
 @media (max-width: 575px){
     h1{
         font-size: 4rem;

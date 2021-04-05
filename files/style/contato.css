@@ -29,8 +29,7 @@
 
 
 /*PAGE TITLE
-============================== 
-    background-image: linear-gradient(180deg, #231f20f1 50%, #231f20c2); */
+==============================*/
 
 #page-title{
     z-index:5;
@@ -50,3 +49,71 @@
 }
 
 
+
+
+
+
+/*CONTATO
+==============================*/
+
+
+#contato h3{
+    color: #aba000;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#contato a {
+    color: #231f20;
+    white-space: nowrap;
+    margin-top: 1rem;
+}
+
+#contato a:hover {
+    color: #7c7c7c;
+    white-space: nowrap;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+#contato i {
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+
+#contato img{
+    width: 8rem;   
+}
+
+#contato .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#contato .col{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+@media (max-width: 767px){  
+    
+    #contato{
+        padding-bottom: 0!important;
+    }
+    #contato img{
+        width: 50%!important;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    #contato .col{
+        padding: 0 2rem;
+        margin-bottom: 5rem;
+    }
+    
+    #contato .content .col:first-child{
+        margin-bottom: 10rem;
+    }
+   
+}

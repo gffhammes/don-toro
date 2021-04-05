@@ -113,9 +113,6 @@
     margin-top: 1rem;
 }
 
-#eventos .evento-description{
-}
-
 
 @media (max-width:491px){
     .evento-details{
@@ -126,4 +123,8 @@
         height: fit-content;
     }
 
+}
+
+
+@media (max-width:991px){
 }
