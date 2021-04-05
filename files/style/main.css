@@ -28,7 +28,7 @@ html {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .collapsing {
+    #navbar .collapsing {
         transition-property: width, visibility;
         transition-duration: .25s;
     }
@@ -614,15 +614,8 @@ footer .col{
         padding: 1rem;
         transition: 200ms;
     }
-    /*
 
-    .navbar-collapse>.navbar-nav{
-        width: fit-content;
-        height: 100vh;
-        min-width: 25vw;
-    }*/
-
-    .collapsing{
+    #navbar .collapsing{
         height: 100vh!important;
         width: 0;
         transition: all 300ms ease;
