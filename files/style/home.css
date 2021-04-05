@@ -693,10 +693,6 @@
     margin-top: 1rem;
 }
 
-.col .slick-slide{
-    padding: 0;
-}
-
 @media (max-width:491px){
     .evento-details{
         margin-top: 1rem;

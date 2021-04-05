@@ -68,6 +68,10 @@
     display: flex !important;
 }
 
+.col .slick-slide{
+    padding: 0;
+}
+
 /* the parent */
 .slick-list {
     margin: 0 -10px;
@@ -84,7 +88,10 @@
     object-position: left;
 }
 
-
+#nossa-loja .slick-next:before,
+#nossa-loja .slick-prev:before{
+    color: #000;
+}
 
 
 
@@ -96,6 +103,10 @@
 #bar-churrasco{
     background-color: #231f20;
     color: #fff;
+}
+
+#bar-churrasco .content{
+    padding-bottom: 0;
 }
 
 #bar-churrasco .icons-churrasco{
@@ -180,13 +191,23 @@
 
 /*CARDAPIO GENERAL
 ====================*/
+#happy-hour{
+    background-color: #231f20;
+    color: #fff;
+}
+
+#happy-hour .title{
+    text-align: center;
+}
+
+
 .cardapio-item-wrapper{
     padding: 1rem 1rem;
 }
 
 .cardapio-item{
     padding: 0;
-    background-color: rgb(240, 240, 240);
+    background-color: #fff;
     border-radius: 10px;
     height: 100%;
 }
@@ -247,7 +268,7 @@
 
 .cardapio-item-content > .col {
     padding: 1rem;
-    background-color: rgb(240, 240, 240);
+    background-color: #fff;
     border-radius: 0 0 10px 10px;
 }
 
@@ -308,10 +329,6 @@
 
 /*PARCEIROS
 ==============================*/
-
-#parceiros .title{
-    text-align: center;
-}
 
 #parceiros .row.slider-home-parceiros img{
     width: 100%;
