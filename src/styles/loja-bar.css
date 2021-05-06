@@ -1,0 +1,96 @@
+@import url("/src/styles/main.css");
+
+.parallax {
+    background-image: url('/src/img/acougue-joinville-17.jpg');
+}
+
+
+
+
+
+/*NOSSA LOJA ====================*/
+#nossa-loja .section-content {
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+}
+
+#nossa-loja .section-content img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+@media (max-width: 767px) {
+    #nossa-loja .section-content {
+        gap: 3rem;
+        flex-direction: column;
+    }
+}
+
+
+
+
+/*BAR E CHURRASCO ====================*/
+#bar-churrasco {
+    background-color: var(--gray-800);
+    color: white;
+}
+
+#bar-churrasco .section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+#bar-churrasco .icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+#bar-churrasco .icons .icon-wrapper {
+    flex: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#bar-churrasco .icons .icon-wrapper .icon-image {
+    height: 5rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+#bar-churrasco .icons .icon-wrapper h3 {
+    margin-bottom: 1rem;
+}
+
+#bar-churrasco .images{
+    display: flex;
+    gap: 1.5rem;
+}
+
+#bar-churrasco .images .column{
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#bar-churrasco .images img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+#bar-churrasco .images .column:last-child img{
+    flex: 1 0 100%;
+}
+
+@media (max-width: 767px) {
+    #bar-churrasco .images{
+        flex-direction: column;
+    }
+    #bar-churrasco .icons {
+        flex-direction: column;
+    }
+}

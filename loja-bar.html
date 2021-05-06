@@ -1,450 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja e Bar | Don Toro</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-     <!--FAV ICON-->
-    <link rel="apple-touch-icon" sizes="180x180" href="./files/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./files/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./files/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./files/favicon/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+  <title>Loja e Bar | Don Toro</title>
+  <meta name="description" content="Uma casa de carnes que coloca o melhor custo benefício na mesa dos brasileiros e busca não só vender carnes, mas propor uma experiência única para o cliente.">
+  <meta name="keywords" content="Açougue, Casa de Carnes">
 
-     <!-- Bootstrap CSS -->
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="apple-touch-icon" sizes="180x180" href="/src/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/src/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/src/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/src/favicon/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 
-
-    <!--FONTAWESOME-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-
-    <!--STYLES-->
-    <link rel="stylesheet" href="./files/style/main.css">
-    <link rel="stylesheet" href="./files/style/loja-bar.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>  
+  
+  <link rel="stylesheet" href="/src/styles/loja-bar.css">
 </head>
 <body>
-    
-  
-    <!--NAVBAR-->
-    <header>
-      <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
-        <div id="navbar-container" class="container">
+  <header id="header"></header>
 
-          <!--LOGO-->
-          <a id="navbar-brand" class="navbar-brand" href="index.html">
-            <img src="./files/img/logo-dontoro-branca.png" alt="logo-don-toro">
-          </a>
+  <section id="parallax-banner" class="parallax-wrapper">
+    <div class="parallax">
+      <div class="cover"></div>        
+    </div>
+  </section>
 
-          <!--SOCIAL MEDIA ICONS
-          <div class="social-icons">
-            <a target="blank" href=""><i style="margin-right: 1rem;" class="fab fa-facebook-f"></i></a>  
-            <a target="blank" href="https://www.instagram.com/_dontoro"><i class="fab fa-instagram"></i></a>
-          </div>-->
-
-          <!--HAMBURGER BUTTON-->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <!--MENU-->
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <div class="navbar-nav">
-              <div class="navbar-nav mx-auto"></div>
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="index.html">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="quem-somos.html">QUEM SOMOS</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="carnes.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        CARNES
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="carnes.html#kits-promocionais">Kits promocionais</a></li>
-                        <li><a class="dropdown-item" href="carnes.html#mais-vendidas">Mais vendidas</a></li>
-                        <li><a class="dropdown-item" href="carnes.html#linhas">Todas as carnes</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link active dropdown-toggle" href="loja-bar.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        LOJA E BAR
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="loja-bar.html#nossa-loja">Nossa loja</a></li>
-                        <li><a class="dropdown-item" href="loja-bar.html#bar-churrasco">Bar e churrasco</a></li>
-                        <li><a class="dropdown-item" href="loja-bar.html#happy-hour">Happy Hour</a></li>
-                        <li><a class="dropdown-item" href="loja-bar.html#parceiros">Parceiros</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="eventos.html">EVENTOS</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="contato.html">CONTATO</a>
-                    </li>
-                  </ul>
-            </div>
-          </div>
-
-        </div>
-      </nav>                      
-    </header>
-       
-    <!--PARALLAX-->
-    <section id="parallax-banner" class="parallax-wrapper">
-      <div class="parallax">
-        <div class="cover"></div>        
-      </div>
-    </section> 
-
-    <!--PAGE TITLE-->
-    <section id="page-title">
-      <div class="container">
-        <div class="row">
-          <div class="col">            
-            <h1 style="color: white;">LOJA & BAR</h1> 
-            </div>
+  <section id="page-title">
+    <div class="container">
+      <div class="row">
+        <div class="col">            
+          <h1 style="color: white;">LOJA & BAR</h1> 
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!--LOJA-->
-    <section id="nossa-loja">
-      <div class="container">
+  <section id="nossa-loja">
+    <div class="container">
+      <header>
+        <p>NOSSA LOJA</p>
+        <h2>VISITE NOSSA CASA DE CARNES</h2>
+      </header>
 
-        <!--TITLE-->
-        <div class="row">
-          <div class="col title">
-            <p>NOSSA LOJA</p>
-            <h2>VISITE NOSSA CASA DE CARNES</h2>
-          </div>
+      <div class="section-content">
+        <div class="text-content">
+          <p>Na Don Toro você encontra a melhor experiência em carnes, tanto na linha prática para o dia a dia, como nos cortes premium.</p>
+          <p>Todas as carnes, sem exceção, são de qualidade diferenciada e com sabor incomparável.</p>
+          <p>Desde o controle rígido de qualidade de nossos deliciosos cortes até o momento do <em>check-out</em> em nossa loja, todos os esforços e cuidados são voltados à satisfação total de nossos clientes.</p>
+          <p>Além disso, temos acompanhamentos, temperos e bebidas para uma experiência completa.</p>
         </div>
-
-        <!--CONTENT-->
-        <div class="row content">
-          <div class="col text-content">
-            <p>Na Don Toro você encontra a melhor experiência em carnes, tanto na linha prática para o dia a dia, como nos cortes premium.</p>
-            <p>Todas as carnes, sem exceção, são de qualidade diferenciada e com sabor incomparável.</p>
-            <p>Desde o controle rígido de qualidade de nossos deliciosos cortes até o momento do <em>check-out</em> em nossa loja, todos os esforços e cuidados são voltados à satisfação total de nossos clientes.</p>
-            <p>Além disso, temos acompanhamentos, temperos e bebidas para uma experiência completa.</p>
-          </div>
-          <div class="col img-content">
-            <div class="row slider-home-loja">
-              <div class="col img-content">
-                <img src="./files/img/projeto/fachada-1.jpeg" alt="">
-              </div>
-              <div class="col img-content">
-                <img src="./files/img/projeto/fachada-2.jpeg" alt="">
-              </div>
-              <div class="col img-content">
-                <img src="./files/img/projeto/fachada-3.jpeg" alt="">
-              </div>
-              <div class="col img-content">
-                <img src="./files/img/projeto/externa-1.jpeg" alt="">
-              </div>
-              <div class="col img-content">
-                <img src="./files/img/projeto/externa-2.jpeg" alt="">
-              </div>
-              <div class="col img-content">
-                <img src="./files/img/projeto/interior-3.jpeg" alt="">
-              </div>
-              <div class="col img-content">
-                <img src="./files/img/projeto/interior-4.jpeg" alt="">
-              </div>
-              <div class="col img-content">
-                <img src="./files/img/projeto/interior-5.jpeg" alt="">
-              </div>
-              <div class="col img-content">
-                <img src="./files/img/projeto/interior-6.jpeg" alt="">
-              </div>
-              <div class="col img-content">
-                <img src="./files/img/projeto/interior-7.jpeg" alt="">
-              </div>
-              <div class="col img-content">
-                <img src="./files/img/projeto/interior-8.jpeg" alt="">
-              </div>
-            </div>
-          </div>
+        
+        <div class="image-content">
+          <img class="shadow-3" src="/src/img/acougue-don-toro.JPG" alt="Casa de Carnes Don Toro">
         </div>
-
-      </div>
-    </section>
-
-    <!--BAR E CHURRASCO-->
-    <section id="bar-churrasco">
-      <div class="container">
-
-        <!--TITLE-->
-        <div class="row">
-          <div class="col title">
-            <p>BAR E CHURRASCO</p>
-            <h2>CONHEÇA O ESPAÇO DON TORO</h2>
-          </div>
-        </div>
-
-        <!--CONTENT-->
-        <div class="row content">
-          
-          <!--ICONS-->
-          <div class="col-12">
-            <div class="row icons-churrasco">
-              <div class="col-12 col-lg">
-                <div class="card-churrasco">
-                  <img src="./files/img/icones/icones-branco-01.png" alt="">
-                  <h3>DRINKS E CERVEJA GELADA</h3>
-                  <p>Em nosso bar servimos diversos drinks e cerveja trincando para acompanhar sua carne.</p>
-                </div>
-              </div>
-              <div class="col-12 col-lg">
-                <div class="card-churrasco">
-                  <img src="./files/img/icones/icones-branco-02.png" alt="">
-                  <h3>CHURRASQUEIRA COMPLETA</h3>
-                  <p>Nossa estrutura inclui tudo o que você precisa para fazer o melhor churrasco.</p>
-                </div>
-              </div>
-              <div class="col-12 col-lg">
-                <div class="card-churrasco">
-                  <img src="./files/img/icones/icones-branco-03.png" alt="">
-                  <h3>AMPLO ESPAÇO PARA FESTAS</h3>
-                  <p>Seu evento de churrasco com as melhores carnes, os melhores drinks e as melhores companhias.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <!--IMAGES-->
-          <div class="col-12">
-            <div class="row images">
-              <div id="col-left" class="col-12 col-lg-7">
-                <img id="image-1" src="./files/img/shutterstock/stock-photo-barbecue-dry-aged-rib-of-beef-with-spice-vegetables-and-a-glass-of-light-beer-close-up-on-black-715722118.jpg" alt="" class="shadow-3">
-                <img id="image-2" src="./files/img/projeto/bar-churrasco-2.jpeg" alt="" class="shadow-3">
-              </div>
-              <div id="col-right" class="col-12 col-lg-5">                
-                <img id="image-3" src="./files/img/projeto/bar-churrasco-3.jpeg" alt="" class="shadow-3">
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!--HAPPY HOUR-->
-    <section id="happy-hour">
-      <div class="container">
-    
-        <!--TITLE-->
-        <div class="row">
-              <div class="col title">
-                <p>HAPPY HOUR</p>
-                <h2>HAPPY HOUR</h2>
-              </div>
-        </div>
-    
-        <!--CONTENT-->
-        <div class="row content">
-            <div class="col">
-              <div class="row text-content">
-                <p>Na Don Toro o seu happy hour é muito mais especial!</p>
-                <p>Temos opções de entradas até sobremesas para fazer sua noite.</p>
-                <p>De <strong>segunda a sexta</strong>, das <strong>18h as 20h</strong> você encontra aqui os melhores drinks e aperitivos para fazer aquele social!</p>
-              </div>
-              <div class="row">
-
-              <!--ITEM 1-->
-              <div class="col-12 col-md-6 col-xl-4 cardapio-item-wrapper">
-                <div class="shadow-3 cardapio-item">
-                  <div class="row cardapio-item-img">
-                    <div class="col">
-                      <img src="./files/img/bananinha.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="row cardapio-item-content">
-                    <div class="col">
-                      <div class="row cardapio-item-header">
-                        <div class="col col-auto">
-                          <h3>BANANINHA</h3>
-                          <p class="cardapio-item-size"><i class="fas fa-user-friends"></i> <strong>2 porções</strong></p>
-                        </div>
-                        <div class="col col-auto cardapio-item-price">
-                          <h3>R$ 30</h3>
-                        </div>
-                      </div>
-                      <div class="row cardapio-item-details">
-                        <span>A bananinha é retirada entre as costelas do boi. Muito sabor e suculência para abrir seu apetite.</span>
-                      </div>
-                    </div>
-                  </div>              
-                </div>
-              </div>
-
-              <!--ITEM 2-->
-              <div class="col-12 col-md-6 col-xl-4 cardapio-item-wrapper">
-                <div class="shadow-3 cardapio-item">
-                  <div class="row cardapio-item-img">
-                    <div class="col">
-                      <img src="./files/img/queijo-coalho.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="row cardapio-item-content">
-                    <div class="col">
-                      <div class="row cardapio-item-header">
-                        <div class="col col-auto">
-                          <h3>QUEIJO COALHO</h3>
-                          <p class="cardapio-item-size"><i class="fas fa-user-friends"></i> <strong>2 porções</strong></p>
-                        </div>
-                        <div class="col col-auto cardapio-item-price">
-                          <h3>R$ 30</h3>
-                        </div>
-                      </div>
-                      <div class="row cardapio-item-details">
-                        <span>A bananinha é retirada entre as costelas do boi. Muito sabor e suculência para abrir seu apetite.</span>
-                      </div>
-                    </div>
-                  </div>              
-                </div>
-              </div>
-
-              <!--ITEM 3-->
-              <div class="col-12 col-md-6 col-xl-4 cardapio-item-wrapper">
-                <div class="shadow-3 cardapio-item">
-                  <div class="row cardapio-item-img">
-                    <div class="col">
-                      <img src="./files/img/tulipa-frango.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="row cardapio-item-content">
-                    <div class="col">
-                      <div class="row cardapio-item-header">
-                        <div class="col col-auto">
-                          <h3>TULIPA DE FRANGO</h3>
-                          <p class="cardapio-item-size"><i class="fas fa-user-friends"></i> <strong>2 porções</strong></p>
-                        </div>
-                        <div class="col col-auto cardapio-item-price">
-                          <h3>R$ 30</h3>
-                        </div>
-                      </div>
-                      <div class="row cardapio-item-details">
-                        <span>A bananinha é retirada entre as costelas do boi. Muito sabor e suculência para abrir seu apetite.</span>
-                      </div>
-                    </div>
-                  </div>              
-                </div>
-              </div>
-
-              </div>            
-            </div>
-        </div>
-
-        <!--BUTTONS-->
-        <div class="row">
-          <div class=" col-12 col-md-12 col-lg-auto">
-            <a target="blank" href="cardapio.html" class="btn-2">VER CARDÁPIO</a>
-          </div> 
-        </div>
-    
-      </div>    
-    </section>
-
-    <!--PARCEIROS-->
-    <section id="parceiros">
-      <div class="container">
-
-        <!--TITLE-->
-        <div class="row">
-          <div class="col title">
-            <p>PARCEIROS</p>
-            <h2>TRABALHAMOS COM AS MELHORES MARCAS</h2>
-          </div>
-        </div>
-
-        <!--CONTENT-->
-        <div class="row content">
-          <div class="col">
-            <div class="row slider-home-parceiros">
-              <div class="col"><img src="./files/img/parceiros/logo-petra.png" alt=""></div>
-              <div class="col"><img src="./files/img/parceiros/arvoredo-logo.png" alt=""></div>
-              <div class="col"><img src="./files/img/parceiros/logo-bom-de-brasa.png" alt=""></div>
-              <div class="col"><img src="./files/img/parceiros/Stella-Artois-Logo.png" alt=""></div>
-              <div class="col"><img src="./files/img/parceiros/logo-petra.png" alt=""></div>
-              <div class="col"><img src="./files/img/parceiros/arvoredo-logo.png" alt=""></div>
-              <div class="col"><img src="./files/img/parceiros/logo-bom-de-brasa.png" alt=""></div>
-              <div class="col"><img src="./files/img/parceiros/Stella-Artois-Logo.png" alt=""></div>
-            </div>
-          </div>
-        </div>          
-
-      </div>
-    </section>
-    
-    <!--MAPS-->
-    <section id="maps">
-
-      <div class="container-fluid">
-
-        <div class="row">
-
-          <div class="col">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3576.9841765112265!2d-48.85648328442294!3d-26.294612974042053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94deb03b5d191aff%3A0x8b637fb1b9bcc7ed!2sR.%20Max%20Colin%2C%201195%20-%20Am%C3%A9rica%2C%20Joinville%20-%20SC%2C%2089204-041!5e0!3m2!1spt-BR!2sbr!4v1616187778027!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-
-        </div>
-
       </div>
 
-    </section>
+      <div class="buttons-container">
+        <a href="https://wa.me/554730302021?text=Ol%C3%A1%21+Eu+gostaria+de+fazer+um+pedido%21" target="blank" class="btn-1"><i class="fab fa-whatsapp"></i> PEDIR AGORA</a>
+        <a href="loja-bar.html#nossa-loja" class="btn-2">VER MAIS</a>
+      </div>
+    </div>
+  </section>
 
-    <!--FOOTER-->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col col-12 col-md-auto">
-            <img src="./files/img/logo-dontoro-branca-descricao.png" alt="logo-don-toro">
-          </div>
-          <div class="col col-12 col-md-auto">
-            <h3>ENTRE EM CONTATO</h3>
-            <a href=""><i class="fas fa-phone"></i>(47) 3030-3030</a>
-            <a href=""><i class="fab fa-whatsapp"></i>(47) 9 9999-9999</a>
-            <div style="margin-top: 2rem;">
-              <a target="blank" href=""><i class="fab fa-facebook-f"></i></a>  
-              <a target="blank" href="https://www.instagram.com/_dontoro"><i class="fab fa-instagram"></i></a>
-              <a href=""><i class="fab fa-youtube"></i></a>
+  <section id="bar-churrasco">
+    <div class="container">
+      <header>
+        <p>BAR E CHURRASCO</p>
+        <h2>APRECIE SUA CARNE NA DON TORO</h2>
+      </header>
+
+      <div class="section-content">
+        <div class="icons">
+          <div class="icon-wrapper">
+            <div class="icon-image">
+              <img src="/src/img/steak-icon.png" alt="Steak">
+            </div>
+            <div class="icon-details">
+              <h3>OS MELHORES CORTES</h3>
+              <p>Na Don Toro você encontra o que há de melhor em carnes</p>
             </div>
           </div>
-          <div class="col col-12 col-md-auto">
-            <h3>VENHA NOS VISITAR</h3>
-            <a target="blank" href="https://goo.gl/maps/M5iY6Nf9DWN9LeCeA"><i class="fas fa-map-marker-alt"></i>Rua Max Colin, 1195<br>América - Joinville/SC</a>
+
+          <div class="icon-wrapper">
+            <div class="icon-image">
+              <img src="/src/img/apron-icon.png" alt="Avental">
+            </div>
+            <div class="icon-details">
+              <h3>ASSADOR PROFISSIONAL</h3>
+              <p>Aos sábados das 11h às 15h você compra sua carne e nosso profissional assa para você</p>
+            </div>
+          </div>
+
+          <div class="icon-wrapper">
+            <div class="icon-image">
+              <img src="/src/img/beer-icon.png" alt="Avental">
+            </div>
+            <div class="icon-details">
+              <h3>CHOPP & DRINKS</h3>
+              <p>Temos chopp sempre gelado e preparamos diversos drinks para acompanhar sua carne</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="images">
+          <div class="column">
+            <img src="/src/img/acougue-joinville-5.jpg" alt="Bar e Churrasco Don Toro" class="shadow-3">
+            <img src="/src/img/acougue-joinville-7.jpg" alt="Bar e Churrasco Don Toro" class="shadow-3">
+          </div>
+          <div class="column">
+            <img src="/src/img/acougue-joinville-6.jpg" alt="Bar e Churrasco Don Toro" class="shadow-3">
           </div>
         </div>
       </div>
-    </footer>
 
+      <div class="buttons-container">
+        <a href="https://wa.me/554730302021?text=Ol%C3%A1%21+Eu+gostaria+de+fazer+um+pedido%21" target="blank" class="btn-1"><i class="fab fa-whatsapp"></i> PEDIR AGORA</a>
+        <a href="index.html#quem-somos" class="btn-2">VER MAIS</a>
+      </div>
+    </div>
+  </section>
 
+  <footer id="footer"></footer>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></Script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
-    <script src="./files/style/script.js"></script>
-
+  <!--scripts-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></Script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <script src="/src/scripts/slick-slider.js"></script>
+  <script src="/src/scripts/main.js"></script>
   </body>
 </html>

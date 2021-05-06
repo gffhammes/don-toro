@@ -1,0 +1,99 @@
+@import url("/src/styles/main.css");
+  
+.parallax {
+    background-image: url('/src/img/acougue-joinville-9.JPG');
+}
+
+
+/*NOSSA HISTORIA ====================*/
+#nossa-historia .section-content {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+#nossa-historia .section-content .img-content {
+    width: 35%;
+    max-height: 70vh;
+}
+
+#nossa-historia .slick-track {
+    display: flex !important;
+}
+
+#nossa-historia .slick-slide {
+    height: inherit !important;
+}
+
+#nossa-historia .slick-dots {
+    bottom: auto;
+    margin-top: 1rem;
+}
+
+#nossa-historia .slick-prev {
+    left: 15px;
+    z-index: 20;
+}
+
+#nossa-historia .slick-next {
+    right: 25px;
+}
+
+#nossa-historia .slick-next:before,
+#nossa-historia .slick-prev:before {
+    font-size: 2rem;
+}
+
+#nossa-historia .section-content .img-content img {
+    width: 100%;
+    max-height: 70vh;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1rem;
+}
+
+@media (max-width: 991px) {
+    #nossa-historia .section-content {
+        flex-direction: column;
+    }
+    #nossa-historia .section-content .img-content {
+        width: 100%;
+    }
+}
+
+
+
+
+
+/*GALERIA
+==============================*/
+#galeria header {
+    text-align: center;
+}
+
+#galeria .section-content {
+    display: flex;
+    gap: 1rem;
+}
+
+#galeria .section-content .column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#galeria .section-content .column div {
+    width: 100%;
+}
+
+#galeria .section-content .column div img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+@media (max-width: 767px) {
+    #galeria .section-content {
+        flex-direction: column;
+    }
+}

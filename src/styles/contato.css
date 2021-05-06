@@ -1,0 +1,70 @@
+@import url("/src/styles/main.css");
+
+/*PARALLAX BANNER ====================*/
+.parallax {
+    background-image: url('/src/img/acougue-joinville-22.jpg');
+    background-position: center 85%;
+}
+
+
+#contato .contact-info-container {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#contato .contact-info-container .logo img {
+    width: auto;
+    height: 15rem;
+}
+
+#contato .contact-info-container .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+#contato .contact-info-container .contact-info h3 {
+    color: var(--yellow-500);
+}
+
+#contato .contact-info-container .contact-info a {
+    text-decoration: none;
+    color: var(--gray-800);
+    display: flex;
+    transition: 200ms ease;
+}
+
+#contato .contact-info-container .contact-info a:hover {
+    filter: brightness(5);
+}
+
+#contato .contact-info-container .contact-info a i {
+    margin-right: 1rem;
+}
+
+#contato .contact-info-container .contact-info .social-media-icons {
+    margin-top: 1rem;
+}
+
+#contato .contact-info-container .contact-info .social-media-icons a {
+    display: unset;
+}
+
+@media (max-width: 767px) {
+    #contato .contact-info-container {
+        flex-direction: column;
+        gap: 5rem;
+    }
+    #contato .contact-info-container .logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    #contato .contact-info-container .footer-logo img {
+        width: 40%;
+        height: auto;
+    }
+}
