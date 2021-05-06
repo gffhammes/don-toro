@@ -1,7 +1,7 @@
 @import url("../styles/main.css");
 
 .parallax {
-    background-image: url('/src/img/acougue-joinville-11.jpg');
+    background-image: url('src/img/acougue-joinville-11.jpg');
 }
 
 
@@ -99,19 +99,19 @@
 
 
 #tbone.card-2{
-    background-image: url(/src/img/t-bone-acougue-don-toro.jpg);
+    background-image: url(src/img/t-bone-acougue-don-toro.jpg);
 }
 
 #prime-rib.card-2{
-    background-image: url(/src/img/prime-rib-acougue-don-toro.png);
+    background-image: url(src/img/prime-rib-acougue-don-toro.png);
 }
 
 #picanha.card-2{
-    background-image: url(/src/img/picanha-acougue-don-toro.png);
+    background-image: url(src/img/picanha-acougue-don-toro.png);
 }
 
 #tomahawk.card-2{
-    background-image: url(/src/img/tomahawk-acougue-don-toro.jpeg);
+    background-image: url(src/img/tomahawk-acougue-don-toro.jpeg);
 }
 
 @media (max-width:450px){

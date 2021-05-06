@@ -2,7 +2,7 @@
 
 /*PARALLAX BANNER ====================*/
 .parallax {
-    background-image: url('/src/img/acougue-joinville-22.jpg');
+    background-image: url('src/img/acougue-joinville-22.jpg');
     background-position: center 85%;
 }
 
