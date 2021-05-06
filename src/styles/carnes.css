@@ -1,7 +1,7 @@
 @import url("../styles/main.css");
 
 .parallax {
-    background-image: url('src/img/acougue-joinville-11.jpg');
+    background-image: url('../img/acougue-joinville-11.jpg');
 }
 
 
