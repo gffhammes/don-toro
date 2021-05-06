@@ -11,7 +11,7 @@
 }
   
 .parallax {
-    background-image: url('/src/img/acougue-joinville.jpg');
+    background-image: url('../img/acougue-joinville.jpg');
     background-size: cover;
     background-position: center center;
     height: 100vh;
