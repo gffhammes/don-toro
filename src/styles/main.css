@@ -486,7 +486,7 @@ footer .copyright .mobile {
     border: 2px solid var(--yellow-500) ;
     border-radius: 5px;
     padding:.5rem 1rem;
-    transition: color 300ms;
+    transition: 300ms;
     text-align: center;
     text-decoration: none;
     width: 100%;
@@ -500,7 +500,6 @@ footer .copyright .mobile {
     border-radius: 5px;
     border-color: var(--yellow-800);
     padding:.5rem 1rem;
-    transition: 300ms;
     text-decoration: none;
 }
 
