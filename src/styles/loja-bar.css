@@ -12,7 +12,10 @@
 #nossa-loja .section-content {
     display: flex;
     align-items: center;
-    gap: 7rem;
+}
+
+#nossa-loja .section-content > * + * {
+    margin: 0 0 0 7rem;
 }
 
 #nossa-loja .section-content img {
@@ -22,8 +25,10 @@
 
 @media (max-width: 767px) {
     #nossa-loja .section-content {
-        gap: 3rem;
         flex-direction: column;
+    }
+    #nossa-loja .section-content > * + * {
+        margin: 3rem 0 0 0;
     }
 }
 
@@ -39,20 +44,29 @@
 #bar-churrasco .section-content {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+}
+
+#bar-churrasco .section-content > * + *{
+    margin-top: 5rem;
 }
 
 #bar-churrasco .icons {
     display: flex;
     justify-content: space-between;
-    gap: 5rem;
+}
+
+#bar-churrasco .icons > * + * {
+    margin: 0 0 0 5rem;
 }
 
 #bar-churrasco .icons .icon-wrapper {
     flex: 33%;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+}
+
+#bar-churrasco .icons .icon-wrapper > * + * {
+    margin-top: 2rem;
 }
 
 #bar-churrasco .icons .icon-wrapper .icon-image {
@@ -67,14 +81,20 @@
 
 #bar-churrasco .images{
     display: flex;
-    gap: 1.5rem;
+}
+
+#bar-churrasco .images > * + *{
+    margin: 0 0 0 1.5rem;
 }
 
 #bar-churrasco .images .column{
     flex: 50%;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+}
+
+#bar-churrasco .images .column > * + *{
+    margin-top: 1.5rem;
 }
 
 #bar-churrasco .images img{
@@ -90,7 +110,13 @@
     #bar-churrasco .images{
         flex-direction: column;
     }
+    #bar-churrasco .images > * + *{
+        margin: 1.5rem 0 0 0 ;
+    }
     #bar-churrasco .icons {
         flex-direction: column;
+    }
+    #bar-churrasco .icons > * + * {
+        margin: 5rem 0 0 0;
     }
 }

@@ -109,7 +109,10 @@ section{
 
 .buttons-container {
     display: flex;
-    gap: 1rem;
+}
+
+.buttons-container > * + * {
+    margin: 0 0 0 1rem;
 }
 
 .buttons-container a{
@@ -129,10 +132,12 @@ section header p {
 @media (max-width: 767px) {
     .buttons-container {
         flex-direction: column;
-    }
-    
+    }    
     .buttons-container a{
         width: 100%;
+    }
+    .buttons-container > * + * {
+        margin: 1rem 0 0 0;
     }
 }
 
@@ -177,7 +182,10 @@ section header p {
     justify-content: space-between;
     flex-direction: column;
     padding: 2rem;
-    gap: 1rem;
+}
+
+#kits .card-content > * + * {
+    margin-top: 1rem;
 }
 
 #kits .card-1{
@@ -321,7 +329,10 @@ footer .contact-info-container .contact-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 2rem;
+}
+
+footer .contact-info-container .contact-info > * + *{
+    margin-top: 2rem;
 }
 
 footer .contact-info-container .contact-info h3 {
@@ -384,7 +395,9 @@ footer .copyright .mobile {
 @media (max-width: 767px) {
     footer .contact-info-container {
         flex-direction: column;
-        gap: 5rem;
+    }
+    footer .contact-info-container > * + * {
+        margin-top: 5rem;
     }
     footer .contact-info-container .footer-logo {
         width: 100%;

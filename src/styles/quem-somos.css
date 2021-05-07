@@ -9,7 +9,10 @@
 #nossa-historia .section-content {
     display: flex;
     align-items: center;
-    gap: 5rem;
+}
+
+#nossa-historia .section-content > * + * {
+    margin: 0 0 0 5rem;
 }
 
 #nossa-historia .section-content .img-content {
@@ -57,6 +60,9 @@
     #nossa-historia .section-content {
         flex-direction: column;
     }
+    #nossa-historia .section-content > * + * {
+        margin: 5rem 0 0 0;
+    }
     #nossa-historia .section-content .img-content {
         width: 100%;
     }
@@ -74,13 +80,19 @@
 
 #galeria .section-content {
     display: flex;
-    gap: 1rem;
+}
+
+#galeria .section-content > * + * {
+    margin: 0 0 0 1rem;
 }
 
 #galeria .section-content .column {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+}
+
+#galeria .section-content .column > * + * {
+    margin-top: 1rem;
 }
 
 #galeria .section-content .column div {
@@ -95,5 +107,8 @@
 @media (max-width: 767px) {
     #galeria .section-content {
         flex-direction: column;
+    }
+    #galeria .section-content > * + * {
+        margin: 1rem 0 0 0;
     }
 }
