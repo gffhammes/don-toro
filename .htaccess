@@ -1,7 +1,11 @@
+# Redireciona de http para https
+<IfModule mod_rewrite.c>
 RewriteEngine on
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]
+</IfModule>
 
+RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-d
-
 RewriteCond %{REQUEST_FILENAME}\.html -f
-
-RewitreRule ^(.*)$ $1.html [NC,L]
+RewriteRule ^(.*)$ $1.html [NC,L]

@@ -23,6 +23,7 @@
     --yellow-800: #635c03;
     --yellow-900: #504b02;
     --gray-300: #f5f5f5;
+    --gray-400: #e6e6e6;
     --gray-500: #838383;
     --gray-800: #231f20;
 }
@@ -38,7 +39,7 @@ html {
     }
 }
 
-@media (max-width: 350px), (max-height: 700px) {
+@media (max-width: 350px), (max-height: 570px) {
     html {
         font-size: 13px;
     }
@@ -170,42 +171,90 @@ section header p {
 }
 
 /*CARDS ====================*/
-#kits .slider-item {
-    height: 100%;
-    margin: 0 .5rem;
+
+#kits .slick-track > * + * {
+    margin-left: 2rem;
+}
+
+#kits .slick-track {
+    display: flex;
+}
+
+#kits .slick-slide {
+    height: inherit;
+}
+
+#kits .card-img {
+    height: 10rem;
+    position: relative;
+    border-radius: 1rem 1rem 0 0;
+}
+
+#kits .card-img img {
+    width: 100%;
+    object-position: center 60%;
+    border-radius: 1rem 1rem 0 0;
 }
 
 #kits .card-content {
     background-color: white;
-    flex: 1 0 60%;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
     padding: 2rem;
-}
-
-#kits .card-content > * + * {
-    margin-top: 1rem;
+    height: 100%;
+    border-radius: 0 0 1rem 1rem;
 }
 
 #kits .card-1{
-    width: 100%;
-    border-radius: 20px;
-    overflow: hidden;
-    height: 100%;
-    color: var(--gray-800);
+    flex-direction: column;
+    border-radius: 1rem;
+}
+
+#kits .card-1 header {
     display: flex;
+    justify-content: space-between;
 }
 
-#kits .card-img {
-    flex: 0 1 40%;
-    position: relative;
+#kits .card-1 .card-details {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--gray-500);
 }
 
-#kits .card-img > img{
+#kits .card-1 .card-content > * + * {
+    margin-top: 2rem;
+} 
+
+#kits .card-content .kit-prices {
+    margin: 1rem 0;
+    padding-right: 1rem;
+    overflow-y: scroll;
+    height: 10rem;
+}
+
+#kits .card-content .kit-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#kits .card-content .kit-item > * + * {
+    white-space: nowrap;
+    margin-left: 1rem;
+}
+
+
+#kits .card-content .card-details ul {
+    margin: 1rem 0 0 0;
+}
+
+
+
+#kits .card-1 .card-content .buttons-container a{
     width: 100%;
-    height: 100%;
 }
+
+
 
 #kits .card-1 .overlay{
     position: absolute;
@@ -232,26 +281,25 @@ section header p {
 
 #kits .slick-dots li.slick-active button:before {
     opacity: 1;
-    color: #fff;
+    color: white;
 }
 
 #kits .slick-dots li button:before{
     opacity: .3;
-    color: #fff;
+    color: white;
 }
 
 @media (max-width: 767px) {
-    #kits .card-1{
+    #kits .section-content .cards {
         flex-direction: column;
     }
-    #kits .card-content {
-        padding: 2rem;
-    }
-    #kits .card-img {
-        flex: 0 0 0;
-        height: 10rem;
+    #kits .section-content .cards > * + * {
+        margin: 3rem 0 0 0;
     }
 }
+
+
+
 
 
 .card-1 .card-buttons{
@@ -260,9 +308,9 @@ section header p {
 
 .card-1 .overlay a{
     padding: 1rem 2rem;
-    border:2px solid #fff;
+    border:2px solid white;
     border-radius: 5px;
-    color: #fff;
+    color: white;
     text-decoration: none;
 }
 
@@ -299,7 +347,7 @@ section header p {
 }
 
 .card-2 span {
-    color: #fff;
+    color: white;
     font-size: 1.5rem;
     position: absolute;
     bottom: 1.5rem;    
@@ -437,7 +485,7 @@ footer .copyright .mobile {
 }
 
 .nav-link{
-    color: #fff;
+    color: white;
     padding: 10px;
     margin: 0 5px;
     border-bottom: 2px transparent solid;
@@ -446,8 +494,8 @@ footer .copyright .mobile {
 }
 
 .nav-link:hover{
-    color: #fff!important;
-    border-bottom: 2px #ffffff solid;
+    color: white!important;
+    border-bottom: 2px white solid;
     transition: 200ms;
 }
 
@@ -456,7 +504,7 @@ footer .copyright .mobile {
 }
 
 .dropdown-item{
-    color:#fff;
+    color:white;
     font-size: .8rem;
     background-color: #131111;
     padding: 1rem;
@@ -468,7 +516,7 @@ footer .copyright .mobile {
 }
 
 .navbar-location {
-    color: #ffffff;
+    color: white;
 }
 
 #navbar-brand {
@@ -495,7 +543,7 @@ footer .copyright .mobile {
 .btn-1{
     background-color: var(--yellow-500);
     font-size: 1rem;
-    color:#ffffff;
+    color:white;
     border: 2px solid var(--yellow-500) ;
     border-radius: 5px;
     padding:.5rem 1rem;
@@ -509,7 +557,7 @@ footer .copyright .mobile {
 .btn-1:hover{
     background-color: var(--yellow-800);
     font-size: 1rem;
-    color:#ffffff;
+    color:white;
     border-radius: 5px;
     border-color: var(--yellow-800);
     padding:.5rem 1rem;
@@ -561,19 +609,21 @@ footer .copyright .mobile {
 }
 
 /*LINHAS DE CARNE ====================*/
-#linhas .panel-heading{
-    color: #fff;
-    border-radius: 5px;
+#linhas .panel-heading {
+    color: white;
+    border-radius: .5rem;
     background-size: cover;
     position: relative;
-    background-position: center top;
-    height: 5rem;
+    background-position: center;
+    height: 10rem;
     vertical-align: middle;
     align-items: center;
     display: flex;
 }
 
-#linhas .panel-title{
+#linhas .panel-title {
+    cursor: pointer;
+    font-size: 1.5rem;
     position: absolute;
     width: 100%;
     padding: 0 1.5rem;
@@ -581,7 +631,7 @@ footer .copyright .mobile {
     justify-content: space-between;
 }
 
-#linhas .panel-title i{
+#linhas .panel-title i {
     transition: all 300ms ease-in 0s;
     transform: rotate(180deg);
 }
@@ -591,15 +641,26 @@ footer .copyright .mobile {
 }
 
 #linhas #panel-heading-1{
-    background-image: url(../img/acougue-joinville-45.jpg);
+    background-image: url(../img/acougue-joinville-38.jpg);
 }
 
 #linhas #panel-heading-2{
-    background-image: url(../img/acougue-joinville-45.jpg);
+    background-image: url(../img/ovino-acougue-don-toro.jpg);
 }
 
 #linhas #panel-heading-3{
-    background-image: url(../img/acougue-joinville-45.jpg);
+    background-image: url(../img/suino-acougue-don-toro.jpg);
+}
+#linhas #panel-heading-4{
+    background-image: url(../img/ave-acougue-don-toro.jpg);
+}
+
+#linhas #panel-heading-5{
+    background-image: url(../img/burger-acougue-don-toro.jpg);
+}
+
+#linhas #panel-heading-6{
+    background-image: url(../img/acougue-joinville-51.jpg);
 }
 
 #linhas .panel-collapse{
@@ -631,13 +692,19 @@ footer .copyright .mobile {
     margin: 0;
 }
 
-#linhas .panel {
-    margin: 2rem 0;
+#linhas #accordion-1 > * + * {
+    margin-top: 3rem;
 }
 
 #linhas .product-item {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+#linhas .product-item > * + * {
+    white-space: nowrap;
+    margin-left: 1rem;
 }
 
 #parallax-banner .cover{
@@ -722,7 +789,7 @@ footer .copyright .mobile {
     }
 
     .dropdown-item{
-        color:#fff;
+        color:white;
         font-size: .8rem;
         background-color: #4d4802;
         padding: 1rem;

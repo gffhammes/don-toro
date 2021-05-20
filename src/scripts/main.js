@@ -1,6 +1,7 @@
 $(function(){
-  $('#header').load('src/components/header.html');     
-  $('#footer').load('src/components/footer.html');     
+  $('#header').load('src/components/header.html');
+  $('#linhas').load('src/components/itemsPrices.html');
+  $('#footer').load('src/components/footer.html');
 });
 
 window.addEventListener('scroll', throttle(parallax, 14));

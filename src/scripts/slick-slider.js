@@ -1,12 +1,19 @@
 $('.slider-home-kits').slick({
-  initialSlide:0,
+  initialSlide: 0,
   dots: true,
   infinite: false,
   speed: 300,
-  slidesToShow: 1,
+  slidesToShow: 2,
   slidesToScroll: 1,
-  arrows:false,
-  mobileFirst: true,
+  arrows: false,
+  edgeFriction: 0.1,
+  responsive: [{
+    breakpoint: 767,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
+  }]
 });
 
 $('.slider-gallery').slick({

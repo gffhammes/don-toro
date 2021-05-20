@@ -9,56 +9,19 @@
 
 
 /*KITS ====================*/
-#kits .section-content {
-    display: flex;
-    flex-direction: column;
-}
-
-#kits .section-content > * + * {
-    margin: 3rem 0 0 0;
-}
-
-#kits .section-content .cards {
-    display: flex;
-    justify-content: space-between;
-}
-
-#kits .section-content .cards > * + * {
-    margin: 0 0 0 1.5rem;
-}
-
-#kits .card-1{
-    flex-direction: column;
-}
-
 #kits .card-content {
-    padding: 2rem;
-    background-color: var(--gray-300);
+    background-color: var(--gray-400);
 }
 
-#kits .card-img {
-    flex: 0 0 0;
-    height: 10rem;
+#kits .slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: var(--gray-800);
 }
 
-#kits .card-1 .card-content .buttons-container {
-    flex-direction: column;
+#kits .slick-dots li button:before{
+    opacity: .3;
+    color: var(--gray-800);
 }
-
-#kits .card-1 .card-content .buttons-container a{
-    width: 100%;
-}
-
-@media (max-width: 767px) {
-    #kits .section-content .cards {
-        flex-direction: column;
-    }
-    #kits .section-content .cards > * + * {
-        margin: 3rem 0 0 0;
-    }
-}
-
-
 
 /*MAIS VENDIDAS ====================*/
 #mais-vendidas {
@@ -92,7 +55,7 @@
 }
 
 #mais-vendidas .card-steaks .card-2 .card-details {
-    color: #fff;
+    color: white;
     position: absolute;
     padding: 2rem;
 }
